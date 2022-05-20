@@ -52,6 +52,25 @@ public class Menu {
 		Main.main(null);
 
 	}
+	
+	public static Alumno printCreateAlumno() {
+
+		Alumno alumno=new Alumno();
+		
+		System.out.println("Introduce dni:");		
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		String dni = scan.next();
+		alumno.setDni(dni);
+		
+		System.out.println("Introduce nombre:");		
+		scan = new Scanner(System.in);
+		String nombre = scan.next();
+		alumno.setName(nombre);
+		
+		return alumno;
+
+	}
 
 	public static String printMenuBusquedaAlumnoDni() {
 

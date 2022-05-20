@@ -13,6 +13,8 @@ public class AlumnoController {
 	
 	public static void navigate(int opcion) {
 		
+		Alumno alumno=null;
+		
 		switch (opcion) {
 		case 1:			
 			List<Alumno> alumnos = service.findAll();
@@ -20,8 +22,13 @@ public class AlumnoController {
 			break;
 		case 2:			
 			String dni=Menu.printMenuBusquedaAlumnoDni();		
-			Alumno alumno=service.findByDni(dni);
+			alumno=service.findByDni(dni);
 			Menu.printAlumno(alumno);
+			break;
+		case 3:			
+			alumno=Menu.printCreateAlumno()	;
+			service.createAlumno(alumno);
+			Main.main(null);
 			break;
 		default:
 			Main.main(null);
