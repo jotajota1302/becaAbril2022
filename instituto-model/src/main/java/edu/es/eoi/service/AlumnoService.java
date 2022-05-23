@@ -2,7 +2,6 @@ package edu.es.eoi.service;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
@@ -72,11 +71,15 @@ public class AlumnoService {
 			while(temp!=null) {
 				System.out.println(temp);
 				temp=br.readLine();
-			}			
+			}		
+			
+			br.close();
 			
 		} catch (IOException e) {		
 			e.printStackTrace();
 		}
+		
+		
 		
 		return alumnos;
 		
