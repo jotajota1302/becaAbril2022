@@ -1,6 +1,6 @@
 package ejerciciosficheros;
 
-public class PokemonJson {
+public class Pokemon {
 
 	private String num;
 	

@@ -15,7 +15,7 @@ public class JsonReader {
 		
 		JsonObject json=gson.fromJson(new FileReader("src/main/resources/pokemon.json"),JsonObject.class);
 		
-		PokemonJson[] pokemon = gson.fromJson(json.get("pokemon"), PokemonJson[].class);
+		Pokemon[] pokemon = gson.fromJson(json.get("pokemon"), Pokemon[].class);
 
 		for (int i = 0; i < pokemon.length; i++) {
 			System.out.println("num:"+pokemon[i].getNum()+" name:"+pokemon[i].getName()+" img:"+pokemon[i].getImage()+" type:"+pokemon[i].getType());
