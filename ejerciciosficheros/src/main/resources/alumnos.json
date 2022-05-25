@@ -1,12 +1,79 @@
 {
-	"nombre": "JJ",
-	"dni": "12345678-A"
-},
-{
-	"nombre": "Raquel",
-	"dni": "12345678-A"
-},
-{
-	"nombre": "JJ",
-	"dni": "12345678-A"
+  "map": {
+    "alumno3": {
+      "nombre": "Pepito",
+      "apellido": "Jimenez",
+      "edad": 18,
+      "notas": [
+        {
+          "nota": 8.0,
+          "materia": {
+            "nombre": "Matematicas"
+          }
+        },
+        {
+          "nota": 4.0,
+          "materia": {
+            "nombre": "Fisica"
+          }
+        },
+        {
+          "nota": 8.0,
+          "materia": {
+            "nombre": "Historia"
+          }
+        }
+      ]
+    },
+    "alumno2": {
+      "nombre": "Raquel",
+      "apellido": "Planelles",
+      "edad": 20,
+      "notas": [
+        {
+          "nota": 10.0,
+          "materia": {
+            "nombre": "Matematicas"
+          }
+        },
+        {
+          "nota": 3.0,
+          "materia": {
+            "nombre": "Fisica"
+          }
+        },
+        {
+          "nota": 5.0,
+          "materia": {
+            "nombre": "Historia"
+          }
+        }
+      ]
+    },
+    "alumno1": {
+      "nombre": "JJ",
+      "apellido": "Jimenez",
+      "edad": 39,
+      "notas": [
+        {
+          "nota": 8.0,
+          "materia": {
+            "nombre": "Matematicas"
+          }
+        },
+        {
+          "nota": 4.0,
+          "materia": {
+            "nombre": "Fisica"
+          }
+        },
+        {
+          "nota": 8.0,
+          "materia": {
+            "nombre": "Historia"
+          }
+        }
+      ]
+    }
+  }
 }
