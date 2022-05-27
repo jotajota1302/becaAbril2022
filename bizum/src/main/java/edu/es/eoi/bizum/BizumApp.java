@@ -18,7 +18,7 @@ public class BizumApp {
 //				
 //		UserRepository userRepository=new UserRepositoryJsonImpl();
 //		
-////		repo.createUser(user);		
+//   	repo.createUser(user);		
 //		
 //		User user2=userRepository.findUserByTelephone("12345678");
 //		
@@ -36,7 +36,7 @@ public class BizumApp {
 //		transfer.setAmount(100);
 //		
 //		TransferRepository transferRepository=new TransferRepositoryImpl();
-////		transferRepository.createTransfer(transfer);
+//		transferRepository.createTransfer(transfer);
 //		
 //		List<Transfer> received=transferRepository.findTransfersReceivedByTelephone("12345678");
 //		List<Transfer> sended=transferRepository.findTransfersSendedByTelephone("12345678");
