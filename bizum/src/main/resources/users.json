@@ -1,2 +1,22 @@
-{
-}
+[
+  {
+    "telephone": "12345678",
+    "user": {
+      "mail": "jotajota@gmail.com",
+      "password": "password",
+      "balance": 0.0,
+      "name": "JJ",
+      "telephone": "12345678"
+    }
+  },
+  {
+    "telephone": "12345678",
+    "user": {
+      "mail": "jotajota@gmail.com",
+      "password": "password",
+      "balance": 0.0,
+      "name": "JJ",
+      "telephone": "12345678"
+    }
+  }
+]

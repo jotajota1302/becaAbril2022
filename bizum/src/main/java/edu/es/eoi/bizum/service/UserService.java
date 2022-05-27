@@ -1,5 +1,13 @@
 package edu.es.eoi.bizum.service;
 
-public class UserService {
+import edu.es.eoi.bizum.entity.User;
+
+public interface UserService {
+
+	boolean login(String username, String password);
+
+	boolean register(User newUser);
+
+	boolean exists(String telephone);
 
 }
