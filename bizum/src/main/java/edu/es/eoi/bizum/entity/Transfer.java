@@ -11,6 +11,8 @@ public class Transfer {
 	private double amount;
 	
 	private LocalDateTime transferDate;
+	
+	private String date;
 
 	public User getFrom() {
 		return from;
@@ -44,6 +46,15 @@ public class Transfer {
 		this.transferDate = transferDate;
 	}
 
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	
 	
 	
 }

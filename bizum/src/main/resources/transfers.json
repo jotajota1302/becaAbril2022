@@ -1,2 +1,68 @@
-{
-}
+[
+  {
+    "date": "2022-05-27T18:14:21.068",
+    "transfer": {
+      "from": {
+        "username": "JJ",
+        "mail": "jotajota@gmail.com",
+        "password": "password",
+        "balance": 0.0,
+        "name": "Jose Juan",
+        "telephone": "12345678"
+      },
+      "to": {
+        "username": "Pepe",
+        "mail": "perete@gmail.com",
+        "password": "password",
+        "balance": 10.0,
+        "name": "Pepito",
+        "telephone": "87654321"
+      },
+      "amount": 100.0
+    }
+  },
+  {
+    "date": "2022-05-27T18:14:23.726",
+    "transfer": {
+      "from": {
+        "username": "JJ",
+        "mail": "jotajota@gmail.com",
+        "password": "password",
+        "balance": 0.0,
+        "name": "Jose Juan",
+        "telephone": "12345678"
+      },
+      "to": {
+        "username": "Pepe",
+        "mail": "perete@gmail.com",
+        "password": "password",
+        "balance": 10.0,
+        "name": "Pepito",
+        "telephone": "87654321"
+      },
+      "amount": 100.0
+    }
+  },
+  {
+    "date": "2022-05-27T18:14:36.172",
+    "transfer": {
+      "from": {
+        "username": "Pepe",
+        "mail": "perete@gmail.com",
+        "password": "password",
+        "balance": 10.0,
+        "name": "Pepito",
+        "telephone": "87654321"
+      },
+      "to": {
+        "username": "JJ",
+        "mail": "jotajota@gmail.com",
+        "password": "password",
+        "balance": 0.0,
+        "name": "Jose Juan",
+        "telephone": "12345678"
+      },
+      "amount": 100.0
+    }
+  }
+]

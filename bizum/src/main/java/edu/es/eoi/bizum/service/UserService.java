@@ -4,10 +4,10 @@ import edu.es.eoi.bizum.entity.User;
 
 public interface UserService {
 
-	boolean login(String username, String password);
+	User login(String username, String password);
 
 	boolean register(User newUser);
 
-	boolean exists(String telephone);
+	User exists(String telephone);
 
 }

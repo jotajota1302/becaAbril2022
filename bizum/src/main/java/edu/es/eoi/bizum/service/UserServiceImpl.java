@@ -1,29 +1,32 @@
 package edu.es.eoi.bizum.service;
 
 import edu.es.eoi.bizum.entity.User;
+import edu.es.eoi.bizum.repository.UserRepository;
+import edu.es.eoi.bizum.repository.UserRepositoryJsonImpl;
 
 public class UserServiceImpl implements UserService {
 
-	
-	@Override
-	public boolean login(String username, String password) {
+	private UserRepository repository = new UserRepositoryJsonImpl();
 
-		return true;
+	@Override
+	public User login(String username, String password) {
+
+		return repository.login(username, password);
 
 	}
 
 	@Override
 	public boolean register(User newUser) {
 
-		return true;
+		return repository.createUser(newUser);
 
 	}
 
 	@Override
-	public boolean exists(String telephone) {
+	public User exists(String telephone) {
 
-		return true;
+		return repository.findUserByTelephone(telephone);
 
 	}
-	
+
 }

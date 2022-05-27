@@ -4,19 +4,21 @@
     "user": {
       "mail": "jotajota@gmail.com",
       "password": "password",
-      "balance": 0.0,
-      "name": "JJ",
+      "balance": 10.0,
+      "username": "JJ",
+      "name": "Jose",
       "telephone": "12345678"
     }
   },
   {
-    "telephone": "12345678",
+    "telephone": "87654321",
     "user": {
-      "mail": "jotajota@gmail.com",
+      "mail": "perete@gmail.com",
       "password": "password",
-      "balance": 0.0,
-      "name": "JJ",
-      "telephone": "12345678"
+      "balance": 10.0,      
+      "username": "Pepe",
+      "name": "Pepito",
+      "telephone": "87654321"
     }
   }
 ]
