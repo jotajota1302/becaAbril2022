@@ -64,5 +64,40 @@
       },
       "amount": 100.0
     }
+  },
+  {
+    "date": "2022-05-27T19:51:12.125",
+    "transfer": {
+      "from": {
+        "username": "JJ",
+        "mail": "jotajota@gmail.com",
+        "password": "password",
+        "balance": 10.0,
+        "name": "Jose",
+        "telephone": "12345678"
+      },
+      "to": {
+        "username": "Pepe",
+        "mail": "perete@gmail.com",
+        "password": "password",
+        "balance": 10.0,
+        "name": "Pepito",
+        "telephone": "87654321"
+      },
+      "amount": 50.0,
+      "transferDate": {
+        "date": {
+          "year": 2022,
+          "month": 5,
+          "day": 27
+        },
+        "time": {
+          "hour": 19,
+          "minute": 51,
+          "second": 12,
+          "nano": 125000000
+        }
+      }
+    }
   }
 ]

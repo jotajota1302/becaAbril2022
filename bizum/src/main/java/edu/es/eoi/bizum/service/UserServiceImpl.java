@@ -8,21 +8,22 @@ public class UserServiceImpl implements UserService {
 
 	private UserRepository repository = new UserRepositoryJsonImpl();
 
-	@Override
+	//REQ. 1
 	public User login(String username, String password) {
 
 		return repository.login(username, password);
 
 	}
 
-	@Override
+
+	//REQ. 1.2
 	public boolean register(User newUser) {
 
 		return repository.createUser(newUser);
 
 	}
 
-	@Override
+	//REQ. 1.3
 	public User exists(String telephone) {
 
 		return repository.findUserByTelephone(telephone);
