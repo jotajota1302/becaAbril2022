@@ -1,7 +1,6 @@
 package edu.es.eoi.bizum;
 
 import edu.es.eoi.bizum.entity.User;
-import edu.es.eoi.bizum.repository.UserRepositoryJsonImpl;
 import edu.es.eoi.bizum.view.MainMenu;
 
 public class BizumApp {
