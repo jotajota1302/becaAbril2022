@@ -4,14 +4,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 
 
-public class Main {
+public class MainAlumno {
 	
 	public static EntityManager manager=Persistence.createEntityManagerFactory("MIBASEDEDATOS").createEntityManager();	
 
 	public static void main(String[] args) {
-
-		//read alumno		
-		Alumno result = manager.find(Alumno.class, 6);
 
 		//crear un alumno		
 		Alumno alumno1= new Alumno();
@@ -21,6 +18,9 @@ public class Main {
 		manager.getTransaction().begin();		
 //		manager.persist(alumno1);		
 		manager.getTransaction().commit();
+		
+		//read alumno		
+		Alumno result = manager.find(Alumno.class, 6);
 		
 		//como modifico un registro		
 		Alumno toUpdate=manager.find(Alumno.class, 6);
