@@ -28,7 +28,7 @@ public class Person {
 		this.surname = surname;
 	}
 
-	public String getTelephone() {
+	public String getTelephone() {	
 		return telephone;
 	}
 
