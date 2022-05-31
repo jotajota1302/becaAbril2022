@@ -21,6 +21,7 @@ public class MainAlumno {
 		
 		//read alumno		
 		Alumno result = manager.find(Alumno.class, 6);
+		System.out.println(result.getName());
 		
 		//como modifico un registro		
 		Alumno toUpdate=manager.find(Alumno.class, 6);

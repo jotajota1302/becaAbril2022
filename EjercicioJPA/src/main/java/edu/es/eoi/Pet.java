@@ -2,11 +2,14 @@ package edu.es.eoi;
 
 import java.sql.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -14,7 +17,7 @@ import javax.persistence.Table;
 public class Pet {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)	
 	private int id;
 	
 	@Column(name = "name")
@@ -23,8 +26,9 @@ public class Pet {
 	@Column(name = "birth_date")
 	private Date birthDate;
 	
-	@Column(name = "type_id")
-	private int typeId;
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "type", referencedColumnName = "id")
+	private PetType type;
 	
 	@Column(name="owner_id")
 	private int ownerId;
@@ -53,12 +57,12 @@ public class Pet {
 		this.birthDate = birthDate;
 	}
 
-	public int getTypeId() {
-		return typeId;
+	public PetType getType() {
+		return type;
 	}
 
-	public void setTypeId(int typeId) {
-		this.typeId = typeId;
+	public void setType(PetType type) {
+		this.type = type;
 	}
 
 	public int getOwnerId() {
@@ -68,6 +72,14 @@ public class Pet {
 	public void setOwnerId(int ownerId) {
 		this.ownerId = ownerId;
 	}
+
 	
+
+
+
+	
+
+	
+
 	
 }

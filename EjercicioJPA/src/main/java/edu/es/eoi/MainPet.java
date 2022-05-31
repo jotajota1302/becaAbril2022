@@ -27,10 +27,9 @@ public class MainPet {
 //		manager.persist(pet);
 		manager.getTransaction().commit();		
 	
-		System.out.println(manager.find(Pet.class, 3).getName());
-
+		Pet mascota= manager.find(Pet.class, 2);
 		
-		
+		System.out.println(mascota.getType().getName());
 	}
 
 }
