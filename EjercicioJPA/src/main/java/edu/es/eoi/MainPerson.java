@@ -27,9 +27,13 @@ public class MainPerson {
 		Person p=manager.find(Person.class, 1);
 		
 		List<Article> lista=p.getArticles();
-
+		
 		for (Article article : lista) {
-			System.out.println(article.getName());
+			
+			System.out.println(article.getName());					
+			
+			System.out.println(article.getShops());
+			
 		}
 		
 	
