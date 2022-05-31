@@ -1,5 +1,7 @@
 package edu.es.eoi;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 
@@ -8,10 +10,26 @@ public class MainPerson {
 	public static void main(String[] args) {
 		
 		EntityManager manager = Persistence.createEntityManagerFactory("MIBASEDEDATOS").createEntityManager();
+				
+		Person person = new Person();
+		person.setName("Pepito");
 		
-		Person p=manager.find(Person.class,1);		
+		Address address=new Address();
+		address.setAddress("Calle la flor");
+	
+		person.setAddress(address);
+		address.setPerson(person);
 		
-		System.out.println(p.getAddress().getAddress());
+//		manager.getTransaction().begin();		
+//		manager.persist(person);
+//		manager.getTransaction().commit();
+		
+		Person p=manager.find(Person.class, 1);
+		
+		List<Article> lista=p.getArticles();
+
+		
+		System.out.println(lista);
 	
 	}
 
