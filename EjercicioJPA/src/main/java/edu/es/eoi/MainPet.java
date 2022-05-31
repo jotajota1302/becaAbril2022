@@ -3,14 +3,11 @@ package edu.es.eoi;
 import java.sql.Date;
 import java.util.Calendar;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
-
 public class MainPet {
-
-	public static EntityManager manager=Persistence.createEntityManagerFactory("MIBASEDEDATOS").createEntityManager();	
 	
 	public static void main(String[] args) {
+		
+		PetRepository repository= new PetRepository();
 		
 		//guardar un pet
 		
@@ -23,11 +20,9 @@ public class MainPet {
 		
 		pet.setBirthDate(new Date(calendar.getTimeInMillis()));
 		
-		manager.getTransaction().begin();
-//		manager.persist(pet);
-		manager.getTransaction().commit();		
+		repository.create(pet);
 	
-		Pet mascota= manager.find(Pet.class, 2);
+		Pet mascota= repository.read(2);
 		
 		System.out.println(mascota.getType().getName());
 	}

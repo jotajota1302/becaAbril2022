@@ -1,42 +1,31 @@
 package edu.es.eoi;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
-
-
 public class MainAlumno {
-	
-	public static EntityManager manager=Persistence.createEntityManagerFactory("MIBASEDEDATOS").createEntityManager();	
 
 	public static void main(String[] args) {
 
+		AlumnoRepository repository= new AlumnoRepository();
+		
 		//crear un alumno		
 		Alumno alumno1= new Alumno();
 		alumno1.setName("JJ");
 		alumno1.setNif("67423468B");
 		
-		manager.getTransaction().begin();		
-//		manager.persist(alumno1);		
-		manager.getTransaction().commit();
+		repository.create(alumno1);
 		
 		//read alumno		
-		Alumno result = manager.find(Alumno.class, 6);
+		Alumno result = repository.read(6);
 		System.out.println(result.getName());
 		
 		//como modifico un registro		
-		Alumno toUpdate=manager.find(Alumno.class, 6);
+		Alumno toUpdate=repository.read(6);
 		toUpdate.setAge(30);
 		
-		manager.getTransaction().begin();		
-		manager.merge(toUpdate);
-		manager.getTransaction().commit();		
+		repository.update(toUpdate);
 		
 		//delete un registro		
-		Alumno toDelete=manager.find(Alumno.class, 14);
-		
-		manager.getTransaction().begin();		
-		manager.remove(toDelete);
-		manager.getTransaction().commit();		
+		Alumno toDelete=repository.read(6);				
+		repository.delete(toDelete);		
 		
 		
 	}
