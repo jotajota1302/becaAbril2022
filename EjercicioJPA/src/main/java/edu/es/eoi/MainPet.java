@@ -8,6 +8,7 @@ public class MainPet {
 	public static void main(String[] args) {
 		
 		PetRepository repository= new PetRepository();
+		PetTypeRepository petTypeRepository= new PetTypeRepository();
 		
 		//guardar un pet
 		
@@ -20,11 +21,17 @@ public class MainPet {
 		
 		pet.setBirthDate(new Date(calendar.getTimeInMillis()));
 		
-		repository.create(pet);
+//		repository.create(pet);
 	
 		Pet mascota= repository.read(2);
 		
-		System.out.println(mascota.getType().getName());
+		System.out.println(mascota);
+		
+		PetType tipo=petTypeRepository.read(1);
+		
+		System.out.println(tipo.getName());
+
+		
 	}
 
 }
