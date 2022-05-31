@@ -28,8 +28,11 @@ public class MainPerson {
 		
 		List<Article> lista=p.getArticles();
 
+		for (Article article : lista) {
+			System.out.println(article.getName());
+		}
 		
-		System.out.println(lista);
+	
 	
 	}
 
