@@ -29,8 +29,18 @@ class MundoBancarioJPARepositoryTest {
 	}
 
 	@Test
-	void testFindClienteByDni() {
-		fail("Not yet implemented");
+	void testFindClienteByDni() {	
+		
+		Cliente cliente=new Cliente();
+		cliente.setDni("11111111A");
+		cliente.setNombre("Cliente TEST");
+		
+		repository.createClient(cliente);
+		
+		assertEquals("Cliente TEST", repository.findClienteByDni("11111111A").getNombre());
+		
+		repository.deleteCliente(cliente);
+		
 	}
 
 	@Test
