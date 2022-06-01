@@ -1,17 +1,15 @@
 package edu.es.eoi;
 
-import java.util.Iterator;
 import java.util.List;
-
-import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
 
 public class MundoBancario {
 
 	public static void main(String[] args) {		
 		
-		EntityManager manager=Persistence.createEntityManagerFactory("MIBASEDEDATOS").createEntityManager();
+//		EntityManager manager=Persistence.createEntityManagerFactory("MIBASEDEDATOS").createEntityManager();
+		
+//		MundoBancarioRepositoryInterface repository= new MundoBancarioJDBCRepository();
+		MundoBancarioRepositoryInterface repository= new MundoBancarioJPARepository();
 		
 		Cliente cliente= new Cliente();
 		cliente.setDni("12334534A");
@@ -29,28 +27,25 @@ public class MundoBancario {
 		
 		Cuenta cuenta= new Cuenta();
 		cuenta.setSaldo(500);
-		cuenta.setCliente(manager.find(Cliente.class,"12334534A"));
-		cuenta.setBanco(manager.find(Banco.class, 2));
+		cuenta.setCliente(repository.findClienteByDni("12334534A"));
+		cuenta.setBanco(repository.findBancoById(2));
 		
 //		manager.getTransaction().begin();
 //		manager.persist(cuenta);
 //		manager.getTransaction().commit();
 
-		Cliente c1=manager.find(Cliente.class, "23434545T");
-		Cliente c2=manager.find(Cliente.class, "12334534A");
+		Cliente c1=repository.findClienteByDni("23434545T");
+		Cliente c2=repository.findClienteByDni("12334534A");
 	
-//		System.out.println(c1.getCuentas());
-//		System.out.println(c2.getCuentas());
+		System.out.println(c1.getCuentas());
+		System.out.println(c2.getCuentas());
 		
 		for (Cuenta cuentaTemp : c2.getCuentas()) {			
 			System.out.println(cuentaTemp.getBanco().getCiudad());
 		}
 		
 		//todas las cuentas
-		
-		Query query=manager.createQuery("FROM Cuenta");
-		@SuppressWarnings("unchecked")
-		List<Cuenta> cuentas=query.getResultList();
+		List<Cuenta> cuentas=repository.findCuentasByDni("23434545T");
 		
 		for (Cuenta cuenta2 : cuentas) {
 			System.out.println(cuenta2.getSaldo());
