@@ -4,29 +4,29 @@ import java.time.LocalDateTime;
 
 public class Transfer {
 	
-	private User from;
+	private Person from;
 	
-	private User to;
+	private Person to;
 	
 	private double amount;
 	
 	private LocalDateTime transferDate;
 	
-	private String date;
-
-	public User getFrom() {
+	private String date;	
+	
+	public Person getFrom() {
 		return from;
 	}
 
-	public void setFrom(User from) {
+	public void setFrom(Person from) {
 		this.from = from;
 	}
 
-	public User getTo() {
+	public Person getTo() {
 		return to;
 	}
 
-	public void setTo(User to) {
+	public void setTo(Person to) {
 		this.to = to;
 	}
 

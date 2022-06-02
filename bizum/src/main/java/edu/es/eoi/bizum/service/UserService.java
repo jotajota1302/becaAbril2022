@@ -2,9 +2,7 @@ package edu.es.eoi.bizum.service;
 
 import edu.es.eoi.bizum.entity.User;
 
-public interface UserService {
-
-	User login(String username, String password);
+public interface UserService extends LoginInterface {
 
 	boolean register(User newUser);
 
