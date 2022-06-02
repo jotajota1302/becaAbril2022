@@ -68,3 +68,202 @@
 2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighter: attackplus: 5
 2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighter: attackplus: 5
 2022-06-02-main--DEBUG-edu.es.eoi.Main: end app
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: init app
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 180
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 1
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 2
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 2
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 1
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 4
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 1
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 4
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 3
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 7
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: end app
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: init app
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 180
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 3
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 6
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 5
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 6
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 4
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 5
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 7
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 7
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: end app
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: init app
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 180
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 6
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 1
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 6
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 2
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 2
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 8
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 5
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 7
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: end app
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: init app
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 180
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 5
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 4
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 4
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 4
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 1
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 5
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 8
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 3
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: end app
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 100
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 100
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 100
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 100
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 100
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  Cactus Surfero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surfero : 100
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo135
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo120
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne-100
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo105
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne-200
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo90
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne-300
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo75
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne-400
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo60
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne-500
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo45
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne-600
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo30
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne-700
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo15
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne-800
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 0
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cactus Surferoattacks:  Cuervo Mortifero
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo0
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: init app
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: init app
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: init fight
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortifero : 150
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: pickachu : 100
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 4
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  pickachu
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo78
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne129
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 1
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  pickachu
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo59
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne110
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 3
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  pickachu
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo38
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne86
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 5
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  pickachu
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo15
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityOne64
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: attackplus: 1
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: Cuervo Mortiferoattacks:  pickachu
+2022-06-02-main--DEBUG-edu.es.eoi.FightService: vitalityTwo-4
+2022-06-02-main--DEBUG-edu.es.eoi.CrazyFighterApp: end app
