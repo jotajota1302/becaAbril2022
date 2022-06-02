@@ -1,2 +1,6 @@
-2022-06-02-main--DEBUG-log4jexample.Main:entro en la clase main
-2022-06-02-main--DEBUG-log4jexample.Main:salgo de la clase main
+2022-06-02-main--DEBUG-log4jexample.Calculadora: voy a sumar 4 y 6
+2022-06-02-main--DEBUG-log4jexample.Calculadora: ya he sumado 4 y 6
+2022-06-02-main--DEBUG-log4jexample.Calculadora: voy a sumar 6 y 3
+2022-06-02-main--DEBUG-log4jexample.Calculadora: ya he sumado 6 y 3
+2022-06-02-main--DEBUG-log4jexample.Calculadora: voy a sumar 8 y 9
+2022-06-02-main--DEBUG-log4jexample.Calculadora: ya he sumado 8 y 9
