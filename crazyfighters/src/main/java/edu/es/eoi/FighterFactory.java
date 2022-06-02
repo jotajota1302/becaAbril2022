@@ -3,8 +3,14 @@ package edu.es.eoi;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+
 public class FighterFactory {
 	
+	public static EntityManager manager = Persistence.createEntityManagerFactory("MIBASEDEDATOS").createEntityManager();
+	
+	@SuppressWarnings("unchecked")
 	public static List<AbstractFighter> getFighters() {
 		
 		List<AbstractFighter> fighters=new ArrayList<AbstractFighter>();
@@ -21,7 +27,9 @@ public class FighterFactory {
 		fighters.add(crazyFighter1);
 		fighters.add(crazyFighter2);
 		fighters.add(crazyFighter3);
-		fighters.add(pokemon);
+		fighters.add(pokemon);		
+		
+//		fighters.addAll(manager.createQuery("FROM CrazyFighterEntity").getResultList());		
 		
 		return fighters;
 		
