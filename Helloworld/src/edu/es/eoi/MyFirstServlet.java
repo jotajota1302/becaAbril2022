@@ -1,6 +1,7 @@
 package edu.es.eoi;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,12 +20,20 @@ public class MyFirstServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			
-//		response.getWriter().append("Served at: ").append(request.getContextPath()).append(" called from: ").append(request.getRemoteAddr());
 		
-		System.out.println("me ha invocado: " + request.getRemoteAddr());
+		String user=request.getParameter("uname");
+		String pw=request.getParameter("psw");
 		
-		response.sendRedirect("helloworld.html");
+		System.out.println("voy a comprobar la contraseña de " + user + "pw: " + pw);
+		
+		//ACCEDERIA A BBDD
+		
+		if(user.equals("JJ")) {
+			response.sendRedirect("pagina2.html");
+		}else{
+			response.sendRedirect("pagina3.html");
+		}	
+		
 	}
 
 
