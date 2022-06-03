@@ -28,7 +28,7 @@ public class MyFirstServlet extends HttpServlet {
 		
 		//ACCEDERIA A BBDD
 		
-		if(user.equals("JJ")) {
+		if(!user.equals("JJ")) {
 			response.sendRedirect("pagina2.html");
 		}else{
 			response.sendRedirect("pagina3.html");
