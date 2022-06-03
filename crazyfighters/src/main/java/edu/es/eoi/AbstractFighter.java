@@ -2,45 +2,20 @@ package edu.es.eoi;
 
 public abstract class AbstractFighter {
 
-	protected String name;
-	protected int vitality;
-	protected int attack;
-	protected int level;
+	public abstract String getName();
 
-	public AbstractFighter() {
-		super();
-	}
+	public abstract void setName(String name);
 
-	public String getName() {
-		return name;
-	}
+	public abstract int getVitality();
 
-	public void setName(String name) {
-		this.name = name;
-	}
+	public abstract void setVitality(int vitality);
 
-	public int getVitality() {
-		return vitality;
-	}
+	public abstract int getAttack();
 
-	public void setVitality(int vitality) {
-		this.vitality = vitality;
-	}
-
-	public int getAttack() {
-		return attack;
-	}
-
-	public void setAttack(int attack) {
-		this.attack = attack;
-	}
-
-	public int getLevel() {
-		return level;
-	}
-
-	public void setLevel(int level) {
-		this.level = level;
-	}
+	public abstract void setAttack(int attack);
+	
+	public abstract int getLevel();
+	
+	public abstract void setLevel(int level);
 
 }
