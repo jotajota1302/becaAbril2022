@@ -29,7 +29,7 @@ public class FighterFactory {
 		fighters.add(crazyFighter3);
 		fighters.add(pokemon);		
 		
-//		fighters.addAll(manager.createQuery("FROM CrazyFighterEntity").getResultList());		
+		fighters.addAll(manager.createQuery("FROM CrazyFighterEntity").getResultList());		
 		
 		return fighters;
 		

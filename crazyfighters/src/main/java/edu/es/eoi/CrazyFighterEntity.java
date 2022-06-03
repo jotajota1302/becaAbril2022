@@ -57,4 +57,6 @@ public class CrazyFighterEntity extends AbstractFighter{
 	
 	
 	
+	
+	
 }

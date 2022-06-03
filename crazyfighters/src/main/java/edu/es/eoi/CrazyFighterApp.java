@@ -19,7 +19,7 @@ public class CrazyFighterApp {
 		
 		fighters=FighterFactory.getFighters();		
 		
-		AbstractFighter winner=service.fight(fighters.get(0), fighters.get(3));
+		AbstractFighter winner=service.fight(fighters.get(2), fighters.get(4));
 		
 		System.out.println("ha ganado " + winner.getName());
 		
