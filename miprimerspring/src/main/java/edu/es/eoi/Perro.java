@@ -2,6 +2,15 @@ package edu.es.eoi;
 
 public class Perro {
 	
-	public String raza;
+	private  String raza;
 
+	public String getRaza() {
+		return raza;
+	}
+
+	public void setRaza(String raza) {
+		this.raza = raza;
+	}
+
+	
 }

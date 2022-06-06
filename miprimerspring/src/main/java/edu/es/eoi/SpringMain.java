@@ -1,12 +1,19 @@
 package edu.es.eoi;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class SpringMain {
 
 	public static void main(String[] args) {
 		
 		AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext();
+		
+		FileSystemXmlApplicationContext context2=new FileSystemXmlApplicationContext("src/main/resources/spring.xml");
+		
+		Alumno alumnoTest=context2.getBean(Alumno.class);
+		
+		System.out.println(alumnoTest.getNombre());
 		
 		context.register(AlumnoService.class);
 		context.refresh();
@@ -17,9 +24,9 @@ public class SpringMain {
 		Alumno alumno1=context.getBean(Alumno.class);
 		Alumno alumno2=context.getBean(Alumno.class);
 		
-		alumno2.nombre="pepito";
+		alumno2.setNombre("pepito");
 		
-		System.out.println(alumno1.perro.raza);
+		System.out.println(alumno1.getPerro().getRaza());
 		
 		AlumnoService service1= context.getBean(AlumnoService.class);
 		AlumnoService service2= context.getBean(AlumnoService.class);
@@ -38,6 +45,7 @@ public class SpringMain {
 		System.out.println("Helloworld");
 
 		context.close();
+		context2.close();
 		
 	}
 
