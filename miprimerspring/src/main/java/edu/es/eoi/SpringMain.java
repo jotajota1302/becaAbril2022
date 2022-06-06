@@ -1,10 +1,14 @@
 package edu.es.eoi;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class SpringMain {
 
+	@Autowired
+	public Alumno temp;
+	
 	public static void main(String[] args) {
 		
 		AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext();
