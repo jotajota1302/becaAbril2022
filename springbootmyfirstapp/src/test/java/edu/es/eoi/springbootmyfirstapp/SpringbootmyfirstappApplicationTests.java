@@ -4,21 +4,22 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import edu.es.eoi.springbootmyfirstapp.controller.AlumnoController;
+import edu.es.eoi.springbootmyfirstapp.repository.AlumnoRepositoryJDBCImpl;
+
 @SpringBootTest
 class SpringbootmyfirstappApplicationTests {
 
 	@Autowired
-	public Alumno alumno;
-	
-	@Autowired
-	public AlumnoService service;
-	
+	AlumnoController controller;
 	@Test
-	void contextLoads() {
+	void contextLoads() {		
+	
+		controller.callService("4");
 		
-		System.out.println(alumno.getPerro().getRaza());
-		
-		service.doSomething();
+		AlumnoRepositoryJDBCImpl repo= new AlumnoRepositoryJDBCImpl();
+		repo.findSomething(6);
+	
 	}
 
 }
