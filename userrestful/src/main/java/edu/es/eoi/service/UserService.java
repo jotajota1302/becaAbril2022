@@ -17,4 +17,21 @@ public class UserService {
 		return repository.find(id);
 	}
 	
+	public User create(User user) {		
+		
+		return repository.create(user);
+	}
+	
+	public User update(User user) {	
+		
+		return repository.update(user);
+	}
+	
+	public void delete(User user) {
+		
+		repository.delete(user);
+	
+		
+	}
+	
 }

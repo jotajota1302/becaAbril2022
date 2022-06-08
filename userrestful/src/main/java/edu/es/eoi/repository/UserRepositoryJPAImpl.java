@@ -19,5 +19,31 @@ public class UserRepositoryJPAImpl implements UserRepository {
 		return manager.find(User.class,id);
 		
 	}
+	
+	public User create(User user) {
+		
+		manager.getTransaction().begin();
+		manager.persist(user);
+		manager.getTransaction().commit();
+		
+		return user;
+	}
+	
+	public User update(User user) {
+		
+		manager.getTransaction().begin();
+		manager.merge(user);
+		manager.getTransaction().commit();
+		
+		return user;
+	}
+	
+	public void delete(User user) {
+		
+		manager.getTransaction().begin();
+		manager.remove(user);
+		manager.getTransaction().commit();
+		
+	}
 
 }

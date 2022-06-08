@@ -18,10 +18,9 @@ public class UserController {
 	private UserService service;
 
 	@RequestMapping(value = "/{id}",method = RequestMethod.GET)
-	public User findUser(@PathVariable String id) {
+	public User find(@PathVariable String id) {
 		
-		try {
-			//valido que la id sea un int
+		try {		
 			int pk=Integer.valueOf(id);
 			return service.find(pk);
 			
@@ -32,16 +31,38 @@ public class UserController {
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)
-	public void createUser(@RequestBody User user) {	
+	public void create(@RequestBody User user) {	
 		
 		if(user.getId()!=0) {
 			System.out.println("usuario ya existente");	
 		}else {
-			System.out.println("guardo el user: " + user.getUsername());
+			service.create(user);
+		}		
+		
+	}
+	
+	@RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
+	public void delete(@PathVariable String id) {	
+		
+		User user=service.find(Integer.valueOf(id));
+		
+		service.delete(user);
+		
+	}
+	
+	@RequestMapping(value = "/{id}",method = RequestMethod.PUT)
+	public void update(@PathVariable String id, @RequestBody User user) {	
+		
+		if(user.getId()!=Integer.valueOf(id)) {
+			System.out.println("request incorrecta");
+		}else {
+			service.update(user);
 		}
 		
 		
 		
 	}
 
+	
+	
 }
