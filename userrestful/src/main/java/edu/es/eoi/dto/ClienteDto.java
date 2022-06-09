@@ -1,7 +1,10 @@
 package edu.es.eoi.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class ClienteDto {
 	
+	@JsonProperty(value = "nif")
 	private String dni;	
 
 	private String nombre;
@@ -10,6 +13,7 @@ public class ClienteDto {
 
 	private double saldo;
 	
+	@JsonProperty(value = "deudor")
 	private boolean moroso;
 	
 	public String getDni() {

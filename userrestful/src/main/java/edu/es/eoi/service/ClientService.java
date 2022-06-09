@@ -23,6 +23,8 @@ public class ClientService {
 		Cliente entity = repository.find(dni);
 		ClienteDto dto = convertToDto(entity);
 
+//		dto.setDni(dto.getDni().substring(0,4).concat("*****"));
+		
 		return dto;
 	}
 
