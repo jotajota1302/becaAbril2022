@@ -1,5 +1,6 @@
 package edu.es.eoi;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -8,17 +9,33 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SpringDataExampleApplicationTests {
 
 	@Autowired
-	UserRepository repository;
+	UserRepository userRepo;
+	
+	@Autowired
+	AnimalRepository animalRepo;
 	
 	@Test
 	void contextLoads() {
-		
-		//probar las funciones del repository para un CRUD
-		System.out.println(repository.count());
-		
 	
+		User user= new User();
+		user.setUsername("Test");
+		user.setPassword("pw");
+		user.setMail("mail");
 		
+		userRepo.save(user);		
 		
+		Animal animal= new Animal();
+		animal.setNombre("PEPE");
+		animal.setRaza("LORO");
+		
+		animalRepo.save(animal);
+		
+		user.setAnimal(animal);
+		
+		userRepo.save(user);		
+		
+		userRepo.deleteAll();		
+	
 	}
 
 }

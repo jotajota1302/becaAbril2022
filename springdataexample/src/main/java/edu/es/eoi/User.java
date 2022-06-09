@@ -1,14 +1,14 @@
 package edu.es.eoi;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.OneToOne;
 
-@Entity
-@Table(schema = "beca", name = "usuarios")
+@Entity(name = "usuarios")
 public class User {
 		
 	@Id
@@ -24,6 +24,9 @@ public class User {
 	@Column
 	private String password;
 
+	@OneToOne(targetEntity = Animal.class,cascade = CascadeType.ALL)
+	private Animal animal;
+	
 	public int getId() {
 		return id;
 	}
@@ -54,6 +57,14 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public Animal getAnimal() {
+		return animal;
+	}
+
+	public void setAnimal(Animal animal) {
+		this.animal = animal;
 	}
 	
 	
