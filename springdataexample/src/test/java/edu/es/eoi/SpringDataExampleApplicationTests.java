@@ -13,7 +13,10 @@ class SpringDataExampleApplicationTests {
 	@Test
 	void contextLoads() {
 		
-		System.out.println(repository.findAll());
+		//probar las funciones del repository para un CRUD
+		System.out.println(repository.count());
+		
+	
 		
 		
 	}
