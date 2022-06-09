@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(schema = "beca", name = "usuarios")
 public class User {
-	
+		
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;

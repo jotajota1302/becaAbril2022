@@ -24,7 +24,14 @@ public class UserController {
 
 		try {
 			int pk = Integer.valueOf(id);
-			return new ResponseEntity<>(service.find(pk), HttpStatus.OK);
+			
+			User user=service.find(pk);
+			
+			if(user!=null) {
+				return new ResponseEntity<>(service.find(pk), HttpStatus.OK);
+			}else {
+				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+			}			
 
 		} catch (Exception e) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

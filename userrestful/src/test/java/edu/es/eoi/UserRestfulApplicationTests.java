@@ -5,14 +5,19 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import edu.es.eoi.entity.Cliente;
 import edu.es.eoi.entity.User;
+import edu.es.eoi.repository.ClientRepository;
 import edu.es.eoi.repository.UserRepository;
 
 @SpringBootTest
 class UserRestfulApplicationTests {
 
 	@Autowired
-	private UserRepository repository;
+	private UserRepository userRepository;
+	
+	@Autowired
+	private ClientRepository clientRepository;
 		
 	@Test
 	void testUserRepository() {
@@ -22,18 +27,41 @@ class UserRestfulApplicationTests {
 		tmp.setMail("mailtest");
 		tmp.setPassword("pwtest");
 		
-		repository.create(tmp);
+		userRepository.create(tmp);
 		
-		User user=repository.find(tmp.getId());			
+		User user=userRepository.find(tmp.getId());			
 		Assertions.assertEquals("test",user.getUsername());
 		
 		user.setMail("updated");
-		repository.update(user);
+		userRepository.update(user);
 		
-		Assertions.assertEquals("updated",repository.find(user.getId()).getMail());
+		Assertions.assertEquals("updated",userRepository.find(user.getId()).getMail());
 				
-		repository.delete(user);		
-		Assertions.assertNull(repository.find(tmp.getId()));			
+		userRepository.delete(user);		
+		Assertions.assertNull(userRepository.find(tmp.getId()));			
+		
+	}
+	
+	@Test
+	void testClientRepository() {
+					
+		Cliente tmp=new Cliente();
+		tmp.setDireccion("addresstest");
+		tmp.setDni("88888888A");
+		tmp.setNombre("JJ");
+		
+		clientRepository.create(tmp);
+		
+		Cliente cliente=clientRepository.find(tmp.getDni());			
+		Assertions.assertEquals("JJ",cliente.getNombre());
+		
+		cliente.setDireccion("updated");
+		clientRepository.update(cliente);
+		
+		Assertions.assertEquals("updated",clientRepository.find(cliente.getDni()).getDireccion());
+				
+		clientRepository.delete(cliente);		
+		Assertions.assertNull(clientRepository.find(tmp.getDni()));			
 		
 	}
 
