@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import edu.es.eoi.entity.Cliente;
 import edu.es.eoi.entity.User;
 import edu.es.eoi.repository.ClientRepository;
+import edu.es.eoi.repository.ClientSpringDataRepository;
 import edu.es.eoi.repository.UserRepository;
 
 @SpringBootTest
@@ -18,7 +19,10 @@ class UserRestfulApplicationTests {
 	
 	@Autowired
 	private ClientRepository clientRepository;
-		
+	
+	@Autowired
+	private ClientSpringDataRepository clientSpringDataRepository;
+
 	@Test
 	void testUserRepository() {
 					
@@ -44,11 +48,35 @@ class UserRestfulApplicationTests {
 	
 	@Test
 	void testClientRepository() {
-					
+
 		Cliente tmp=new Cliente();
 		tmp.setDireccion("addresstest");
 		tmp.setDni("88888888A");
-		tmp.setNombre("JJ");
+		tmp.setNombre("JJ");		
+		
+		clientSpringDataRepository.save(tmp);
+		
+		Cliente cliente=clientSpringDataRepository.findById(tmp.getDni()).get();	
+		Assertions.assertEquals("JJ",cliente.getNombre());
+		
+		cliente.setDireccion("updated");
+		clientSpringDataRepository.save(cliente);
+		
+		Assertions.assertEquals("updated",clientSpringDataRepository.findById(cliente.getDni()).get().getDireccion());
+				
+		clientSpringDataRepository.delete(cliente);		
+		
+		Assertions.assertNull(clientSpringDataRepository.findById(tmp.getDni()));			
+		
+	}
+	
+	@Test
+	void testClientRepositorySpringData() {
+
+		Cliente tmp=new Cliente();
+		tmp.setDireccion("addresstest");
+		tmp.setDni("88888888A");
+		tmp.setNombre("JJ");		
 		
 		clientRepository.create(tmp);
 		
