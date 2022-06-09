@@ -13,9 +13,14 @@ class SpringDataExampleApplicationTests {
 	@Autowired
 	AnimalRepository animalRepo;
 	
+	@Autowired
+	ClienteRepository clienteRepo;
+	
 	@Test
 	void contextLoads() {
 	
+		clienteRepo.findById("23434545T").get();				
+		
 		User user= new User();
 		user.setUsername("Test");
 		user.setPassword("pw");
