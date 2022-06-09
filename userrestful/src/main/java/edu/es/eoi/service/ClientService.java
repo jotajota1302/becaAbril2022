@@ -19,7 +19,6 @@ public class ClientService {
 
 	public ClienteDto find(String dni) {
 
-		// encontrar un cliente entidad y devolverme un dto
 		Cliente entity = repository.find(dni);
 		ClienteDto dto = convertToDto(entity);
 
@@ -69,8 +68,7 @@ public class ClientService {
 		for (Cuenta cuenta : entity.getCuentas()) {
 			saldo = saldo + cuenta.getSaldo();
 		}
-		dto.setSaldo(saldo);
-		// logica de negocio
+		dto.setSaldo(saldo);		
 		if (saldo < 0) {
 			dto.setMoroso(true);
 		}
