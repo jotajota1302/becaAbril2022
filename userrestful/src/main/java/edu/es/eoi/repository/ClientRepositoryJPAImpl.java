@@ -53,6 +53,7 @@ public class ClientRepositoryJPAImpl implements ClientRepository {
 		
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Cliente> findAll() {
 		Query query = manager.createQuery("FROM Cliente");
 		return query.getResultList();

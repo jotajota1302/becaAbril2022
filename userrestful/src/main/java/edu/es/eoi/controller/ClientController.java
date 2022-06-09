@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.es.eoi.entity.Cliente;
+import edu.es.eoi.dto.ClienteDto;
 import edu.es.eoi.service.ClientService;
 
 @RestController
@@ -33,17 +33,17 @@ public class ClientController {
 				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 			}
 		
-			Cliente cliente=service.find(dni);
+			ClienteDto cliente=service.find(dni);
 			
 			if(cliente!=null) {
-				return new ResponseEntity<>(service.find(dni), HttpStatus.OK);
+				return new ResponseEntity<>(cliente, HttpStatus.OK);
 			}else {
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 			}
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<?> create(@RequestBody Cliente cliente) {
+	public ResponseEntity<?> create(@RequestBody ClienteDto cliente) {
 
 		if (cliente.getDni().isEmpty()) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -57,7 +57,7 @@ public class ClientController {
 	@RequestMapping(value = "/{dni}", method = RequestMethod.DELETE)
 	public ResponseEntity<?> delete(@PathVariable String dni) {
 
-		Cliente cliente = service.find(dni);
+		ClienteDto cliente = service.find(dni);
 		service.delete(cliente);
 
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
@@ -65,7 +65,7 @@ public class ClientController {
 	}
 
 	@RequestMapping(value = "/{dni}", method = RequestMethod.PUT)
-	public ResponseEntity<?> update(@PathVariable String dni, @RequestBody Cliente cliente) {
+	public ResponseEntity<?> update(@PathVariable String dni, @RequestBody ClienteDto cliente) {
 
 		if (!cliente.getDni().equals(dni)) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
