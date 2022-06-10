@@ -65,7 +65,9 @@ public class ClientService {
 		double saldo = 0;
 		for (Cuenta cuenta : entity.getCuentas()) {
 			saldo = saldo + cuenta.getSaldo();
-			bancos.add(cuenta.getBanco().getNombre());
+			if(!bancos.contains(cuenta.getBanco().getNombre())) {
+				bancos.add(cuenta.getBanco().getNombre());
+			}			
 		}
 		dto.setSaldo(saldo);		
 		if (saldo < 0) {
