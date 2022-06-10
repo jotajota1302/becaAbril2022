@@ -1,5 +1,7 @@
 package edu.es.eoi.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +24,13 @@ public class PokemonController {
 	public ResponseEntity<PokemonDto> findById(@PathVariable Integer id){
 		
 		return new ResponseEntity<PokemonDto>(service.findById(id),HttpStatus.OK);
+		
+	}
+	
+	@RequestMapping(method = RequestMethod.GET)
+	public ResponseEntity<List<PokemonDto>> findAll(){
+		
+		return new ResponseEntity<List<PokemonDto>>(service.findAll(),HttpStatus.OK);
 		
 	}
 	
