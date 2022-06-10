@@ -28,6 +28,7 @@ class PokemonRestApplicationTests {
 	@Test
 	void contextLoads() {
 
+		List<Pokemon> allOrdered=pokemonRepo.findByNameContaining("B");
 		
 		Assertions.assertEquals(151,pokemonRepo.count());
 		

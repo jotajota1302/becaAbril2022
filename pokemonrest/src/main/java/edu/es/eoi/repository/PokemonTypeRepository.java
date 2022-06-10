@@ -6,4 +6,6 @@ import edu.es.eoi.entity.PokemonType;
 
 public interface PokemonTypeRepository extends JpaRepository<PokemonType, Integer>{
 
+	
+	
 }

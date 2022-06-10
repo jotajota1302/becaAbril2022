@@ -31,10 +31,10 @@ public class Pokemon {
 	private String name;
 	
 	@Column(name = "peso")
-	private String weight;
+	private double weight;
 	
 	@Column(name = "altura")
-	private String height;
+	private double height;
 	
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "pokemon_tipo", joinColumns = @JoinColumn(name="numero_pokedex"), inverseJoinColumns = @JoinColumn(name="id_tipo"))
