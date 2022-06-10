@@ -16,4 +16,10 @@ public class PokemonDto {
 	private String attack;
 	
 	private String defense;
+	
+	private String health;
+	
+	private String special;
+	
+	private String speed;
 }

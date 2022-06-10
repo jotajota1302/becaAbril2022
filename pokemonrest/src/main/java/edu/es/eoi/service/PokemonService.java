@@ -51,7 +51,10 @@ public class PokemonService {
 
 		dto.setAttack(String.valueOf(stats.getAttack()));
 		dto.setDefense(String.valueOf(stats.getDefense()));
-
+		dto.setHealth(String.valueOf(stats.getHealth()));
+		dto.setSpecial(String.valueOf(stats.getSpecial()));
+		dto.setSpeed(String.valueOf(stats.getSpeed()));
+		
 		return dto;
 
 	}
@@ -80,6 +83,9 @@ public class PokemonService {
 			if (stats.isPresent()) {
 				dto.setAttack(String.valueOf(stats.get().getAttack()));
 				dto.setDefense(String.valueOf(stats.get().getDefense()));
+				dto.setHealth(String.valueOf(stats.get().getHealth()));
+				dto.setSpecial(String.valueOf(stats.get().getSpecial()));
+				dto.setSpeed(String.valueOf(stats.get().getSpeed()));
 			}
 
 			dtos.add(dto);
@@ -113,6 +119,9 @@ public class PokemonService {
 			if (stats.isPresent()) {
 				dto.setAttack(String.valueOf(stats.get().getAttack()));
 				dto.setDefense(String.valueOf(stats.get().getDefense()));
+				dto.setHealth(String.valueOf(stats.get().getHealth()));
+				dto.setSpecial(String.valueOf(stats.get().getSpecial()));
+				dto.setSpeed(String.valueOf(stats.get().getSpeed()));
 			}
 
 			dtos.add(dto);
