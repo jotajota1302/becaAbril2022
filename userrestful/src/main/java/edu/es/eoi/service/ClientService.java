@@ -34,10 +34,8 @@ public class ClientService {
 
 	public ClienteDto update(ClienteDto dto) {
 
-		Cliente cliente = repository.find(dto.getDni());
-		cliente.setDireccion(dto.getDireccion());
-		cliente.setDni(dto.getDni());
-		cliente.setNombre(dto.getNombre());
+		Cliente cliente = repository.find(dto.getDni());		
+		cliente.setDni(dto.getDni());		
 		repository.update(cliente);
 
 		return dto;
@@ -62,26 +60,28 @@ public class ClientService {
 
 		ClienteDto dto = new ClienteDto();
 		dto.setDni(entity.getDni());
-		dto.setNombre(entity.getNombre());
-		dto.setDireccion(entity.getDireccion());
+		
+		List<String> bancos=new ArrayList<String>();
 		double saldo = 0;
 		for (Cuenta cuenta : entity.getCuentas()) {
 			saldo = saldo + cuenta.getSaldo();
+			bancos.add(cuenta.getBanco().getNombre());
 		}
 		dto.setSaldo(saldo);		
 		if (saldo < 0) {
 			dto.setMoroso(true);
 		}
+		dto.setCuentas(entity.getCuentas().size());		
+		
+		dto.setBancos(bancos);
+		
 		return dto;
 	}
 
 	private Cliente convertToEntity(ClienteDto dto) {
 
 		Cliente cliente = new Cliente();
-		cliente.setDni(dto.getDni());
-		cliente.setDireccion(dto.getDireccion());
-		cliente.setNombre(dto.getNombre());
-
+		cliente.setDni(dto.getDni());	
 		return cliente;
 	}
 
