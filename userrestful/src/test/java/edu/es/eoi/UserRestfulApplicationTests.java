@@ -1,5 +1,7 @@
 package edu.es.eoi;
 
+import java.util.Optional;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,7 +68,7 @@ class UserRestfulApplicationTests {
 				
 		clientSpringDataRepository.delete(cliente);		
 		
-		Assertions.assertNull(clientSpringDataRepository.findById(tmp.getDni()));			
+		Assertions.assertEquals(Optional.empty(),clientSpringDataRepository.findById(tmp.getDni()));			
 		
 	}
 	
