@@ -30,9 +30,13 @@ public class PokemonController {
 	}
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<List<PokemonDto>> findAll(@RequestParam @Nullable String param){
+	public ResponseEntity<List<PokemonDto>> findAll(@RequestParam @Nullable String type){
 		
-		return new ResponseEntity<List<PokemonDto>>(service.findAll(),HttpStatus.OK);
+		if(type!=null&&type!="") {
+			return new ResponseEntity<List<PokemonDto>>(service.findAllByType(type),HttpStatus.OK);
+		}else {
+			return new ResponseEntity<List<PokemonDto>>(service.findAll(),HttpStatus.OK);
+		}		
 		
 	}
 	

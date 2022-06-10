@@ -28,7 +28,9 @@ class PokemonRestApplicationTests {
 	@Test
 	void contextLoads() {
 
-		List<Pokemon> allOrdered=pokemonRepo.findByNameContaining("B");
+		List<Pokemon> allContaining=pokemonRepo.findByNameContaining("B");
+		List<Pokemon> allOrderedByWeight=pokemonRepo.findByOrderByWeightDesc();
+		List<Pokemon> allWithType=pokemonRepo.findByTypes_nameIgnoringCase("Veneno");
 		
 		Assertions.assertEquals(151,pokemonRepo.count());
 		

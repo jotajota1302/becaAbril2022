@@ -88,5 +88,38 @@ public class PokemonService {
 		return dtos;
 
 	}
+	
+	public List<PokemonDto> findAllByType(String type) {
+
+		List<Pokemon> pokemons = pokemonRepository.findByTypes_nameIgnoringCase(type);
+		List<PokemonDto> dtos = new ArrayList<PokemonDto>();
+
+		for (Pokemon pokemon : pokemons) {
+
+			PokemonDto dto = new PokemonDto();
+			dto.setName(pokemon.getName());
+
+			List<String> types = new ArrayList<String>();
+			List<PokemonType> pokemonTypes = pokemon.getTypes();
+
+			for (PokemonType pokemonType : pokemonTypes) {
+				types.add(pokemonType.getName());
+			}
+
+			dto.setTypes(types);
+
+			Optional<Stats> stats = statsRepository.findById(pokemon.getNumber());
+
+			if (stats.isPresent()) {
+				dto.setAttack(String.valueOf(stats.get().getAttack()));
+				dto.setDefense(String.valueOf(stats.get().getDefense()));
+			}
+
+			dtos.add(dto);
+		}
+
+		return dtos;
+
+	}
 
 }
